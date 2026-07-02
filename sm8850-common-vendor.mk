@@ -13,8 +13,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/init.oplus.sensor.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.oplus.sensor.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/init.oppo.reserve.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.oppo.reserve.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/init.touchDaemon.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.touchDaemon.rc \
-    vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor-oplus-hardware-touch-V2-hbp5-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-touch-V2-hbp5-service.rc \
-    vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.charger-V10-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.charger-V10-service.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml \
     vendor/oneplus/sm8850-common/proprietary/product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/com.android.hotwordenrollment.common.util.xml \
@@ -1019,7 +1017,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.syshealthmon-service.xml \
     vendor.qti.qccsyshal_aidl-service.xml \
     manifest_displaycolorfeature_aidl.xml \
-    manifest_oplus_charger_aidl.xml \
     manifest_oplus_cwb_aidl.xml \
     manifest_oplus_displaypanelfeature_aidl.xml \
     manifest_touch_aidl.xml \
@@ -1133,8 +1130,6 @@ PRODUCT_PACKAGES += \
     cwb_utils_aidl \
     gauged \
     ufcsd \
-    vendor-oplus-hardware-touch-V2-hbp5-service \
-    vendor.oplus.hardware.charger-V10-service \
     vendor.oplus.hardware.displaypanelfeature-service \
     wlschgd \
     init.oplus.wifi \
@@ -1166,8 +1161,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/lowi-server.rc:$(TARGET_COPY_OUT_ODM)/etc/init/lowi-server.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/mdm_feature.rc:$(TARGET_COPY_OUT_ODM)/etc/init/mdm_feature.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/subsys_daemon.rc:$(TARGET_COPY_OUT_ODM)/etc/init/subsys_daemon.rc \
+    vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor-oplus-hardware-touch-V2-hbp5-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-touch-V2-hbp5-service.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc \
+    vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.charger-V10-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.charger-V10-service.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/oem_TDD-BYPASS_platfrom_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_TDD-BYPASS_platfrom_license.pfm \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/oem_TDD-BYPASS_platfrom_trail_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_TDD-BYPASS_platfrom_trail_license.pfm \
@@ -1609,6 +1606,7 @@ PRODUCT_PACKAGES += \
     android.hardware.contexthub-service.qmi.xml \
     device_manifest_communication_center_aidl.xml \
     device_manifest_subsys.xml \
+    manifest_oplus_charger_aidl.xml \
     manifest_oplus_esim.xml \
     manifest_oplus_fingerprint_aidl_v3.xml \
     manifest_oplus_ifaa.xml \
@@ -1652,8 +1650,10 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element-service.qti \
     mdm_feature \
     subsys_daemon \
+    vendor-oplus-hardware-touch-V2-hbp5-service \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff \
     vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service \
+    vendor.oplus.hardware.charger-V10-service \
     vendor.oplus.hardware.esim@1.0-service \
     init.subsys
 
