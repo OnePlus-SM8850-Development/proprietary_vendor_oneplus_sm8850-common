@@ -20891,42 +20891,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "vendor-oplus-hardware-touch-V2-hbp5-service",
-    owner: "oneplus",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/bin/hw/vendor-oplus-hardware-touch-V2-hbp5-service",
-            ],
-            shared_libs: [
-                "libolc_vnd",
-                "android.frameworks.stats-V1-ndk",
-                "vendor.oplus.hardware.touch-V2-ndk",
-                "libbase",
-                "libcutils",
-                "liblog",
-                "libbinder_ndk",
-                "libutils",
-                "libhardware",
-                "libbinder",
-                "libtinyxml2-v36",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    device_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "vendor.oplus.hardware.charger-V11-service",
     owner: "oneplus",
     target: {
@@ -29944,6 +29908,42 @@ cc_prebuilt_binary {
                 "libutils",
                 "libmindroid-framework",
                 "libmindroid-app",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor-oplus-hardware-touch-V2-hbp5-service",
+    owner: "oneplus",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/vendor-oplus-hardware-touch-V2-hbp5-service",
+            ],
+            shared_libs: [
+                "libolc_vnd",
+                "android.frameworks.stats-V1-ndk",
+                "vendor.oplus.hardware.touch-V2-ndk",
+                "libbase",
+                "libcutils",
+                "liblog",
+                "libbinder_ndk",
+                "libutils",
+                "libhardware",
+                "libbinder",
+                "libtinyxml2-v36",
                 "libc++",
                 "libc",
                 "libm",
