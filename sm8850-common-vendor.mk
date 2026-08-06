@@ -789,6 +789,7 @@ PRODUCT_PACKAGES += \
     libvpplibrary \
     libvpptestutils \
     libvui_utils \
+    libwfdaac_vendor \
     libwfdcodecv4l2_proprietary \
     libwfdcommonutils_proprietary \
     libwfdconfigutils_proprietary \
