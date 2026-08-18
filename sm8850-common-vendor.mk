@@ -1062,13 +1062,7 @@ PRODUCT_PACKAGES += \
     init.kernel.post_boot-alor_5_1 \
     init.kernel.post_boot-alor_5_2 \
     init.kernel.post_boot-alor_6_1 \
-    init.kernel.post_boot-alor_default_6_2 \
     init.kernel.post_boot-canoe \
-    init.kernel.post_boot-canoe_5_1 \
-    init.kernel.post_boot-canoe_5_2 \
-    init.kernel.post_boot-canoe_6_1 \
-    init.kernel.post_boot-canoe_default_6_2 \
-    init.kernel.post_boot \
     init.qcom.class_core \
     init.qcom.sensors \
     init.qti.display_boot \
