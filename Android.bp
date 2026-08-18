@@ -19420,14 +19420,6 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.qti.kernel.debug-ftrace",
-    owner: "oneplus",
-    src: "proprietary/vendor/bin/init.qti.kernel.debug-ftrace.sh",
-    filename: "init.qti.kernel.debug-ftrace.sh",
-    soc_specific: true,
-}
-
-sh_binary {
     name: "init.qti.kernel.debug",
     owner: "oneplus",
     src: "proprietary/vendor/bin/init.qti.kernel.debug.sh",

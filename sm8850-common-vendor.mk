@@ -1068,7 +1068,6 @@ PRODUCT_PACKAGES += \
     init.qti.display_boot \
     init.qti.kernel.debug-alor \
     init.qti.kernel.debug-canoe \
-    init.qti.kernel.debug-ftrace \
     init.qti.kernel.debug \
     init.qti.kernel.early_debug-canoe \
     init.qti.kernel.early_debug \

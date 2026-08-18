@@ -44,13 +44,6 @@ do
 		blocklist_expr="-e %"
 	fi
 
-	#ifdef OPLUS_FEATURE_WIFI_FTM
-	#lixiong2@CONNECTIVITY.HARDWARE.WIFI.FTM.9122126, disable wifi driver in ftm mode
-	if [ "$(cat /sys/systeminfo/ftmmode)" == "3" ]; then
-		blocklist_expr+=" -e qca_cld3_peach_v2 -e qca_cld3_wcn7750"
-	fi
-	#endif OPLUS_FEATURE_WIFI_FTM
-
 	# Filter out modules in blocklist - we would see unnecessary errors otherwise
 	load_modules=$(sed = ${dir}/modules.load | sed 'N;s/\n/\t/' | sort -uk2 | sort -nk1 | cut -f2- | grep -w -v ${blocklist_expr} | grep -w -v ${audio_blocklist_expr})
 	first_module=$(echo ${load_modules} | cut -d " " -f1)
